@@ -46,7 +46,7 @@ PE: ["#e8ffee", "🏃"], Other: ["#f0f0f0", "📚"],
 };
 
 const THEMES = {
-pink: { "--cream":"#fdf6f6","--blush":"#f5c8c8","--rose":"#eda8a8","--dusty":"#d4697a","--text":"#4a2d35","--textLight":"#9a7080","--white":"#ffffff","--hero":"linear-gradient(135deg,#fceaea,#f9e0f0)","--blob1":"rgba(245,180,180,0.45)","--blob2":"rgba(220,170,210,0.35)","--navBg":"rgba(253,246,246,0.97)" },
+pink: { "--cream":"#fff5f6","--blush":"#f9bfbf","--rose":"#f093a0","--dusty":"#e05070","--text":"#5a1a2a","--textLight":"#b06070","--white":"#fffbfb","--hero":"linear-gradient(135deg,#fde0e8,#fcd8f0)","--blob1":"rgba(240,147,160,0.45)","--blob2":"rgba(230,160,210,0.4)","--navBg":"rgba(255,245,246,0.97)" },
 sage: { "--cream":"#f3fdf6","--blush":"#b8ddb8","--rose":"#88c488","--dusty":"#5a9e5a","--text":"#2d4a2d","--textLight":"#6a8a6a","--white":"#ffffff","--hero":"linear-gradient(135deg,#edf9ed,#e0f5e0)","--blob1":"rgba(168,197,160,0.4)","--blob2":"rgba(144,196,144,0.3)","--navBg":"rgba(243,253,246,0.97)" },
 lavender: { "--cream":"#f8f3fd","--blush":"#d8c8f0","--rose":"#c0a8e8","--dusty":"#9b78d4","--text":"#3a2d4a","--textLight":"#7a6a8a","--white":"#ffffff","--hero":"linear-gradient(135deg,#f0eafd,#e8e0f8)","--blob1":"rgba(197,184,232,0.4)","--blob2":"rgba(180,160,220,0.3)","--navBg":"rgba(248,243,253,0.97)" },
 midnight: { "--cream":"#1a1a2e","--blush":"#3a3a5c","--rose":"#6a6aaa","--dusty":"#9a9ae0","--text":"#e8e8f8","--textLight":"#a8a8c8","--white":"#252540","--hero":"linear-gradient(135deg,#252545,#1e1e3a)","--blob1":"rgba(106,106,170,0.2)","--blob2":"rgba(154,154,224,0.15)","--navBg":"rgba(26,26,46,0.98)" },
@@ -67,7 +67,7 @@ slate:"Slate", mint:"Mint", plum:"Plum", ember:"Ember",
 };
 
 const THEME_GRADIENTS = {
-pink:"linear-gradient(135deg,#e8a0a0,#c97b7b)", sage:"linear-gradient(135deg,#88c488,#5a9e5a)",
+pink:"linear-gradient(135deg,#f093a0,#e05070)", sage:"linear-gradient(135deg,#88c488,#5a9e5a)",
 lavender:"linear-gradient(135deg,#c0a8e8,#9b78d4)", midnight:"linear-gradient(135deg,#6a6aaa,#3a3a6a)",
 peach:"linear-gradient(135deg,#f0b48a,#d4845a)", ocean:"linear-gradient(135deg,#6ab8d8,#3a8aaa)",
 rose:"linear-gradient(135deg,#e07898,#c04870)", sand:"linear-gradient(135deg,#d4b870,#a88840)",
