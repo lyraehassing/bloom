@@ -46,7 +46,7 @@ PE: ["#e8ffee", "🏃"], Other: ["#f0f0f0", "📚"],
 };
 
 const THEMES = {
-pink: { "--cream":"#fdf8f3","--blush":"#f2c4c4","--rose":"#e8a0a0","--dusty":"#c97b7b","--text":"#4a3f3f","--textLight":"#8a7a7a","--white":"#ffffff","--hero":"linear-gradient(135deg,#f9eded,#f5e8f5)","--blob1":"rgba(242,196,196,0.4)","--blob2":"rgba(197,184,232,0.35)","--navBg":"rgba(253,248,243,0.97)" },
+pink: { "--cream":"#fdf6f6","--blush":"#f5c8c8","--rose":"#eda8a8","--dusty":"#d4697a","--text":"#4a2d35","--textLight":"#9a7080","--white":"#ffffff","--hero":"linear-gradient(135deg,#fceaea,#f9e0f0)","--blob1":"rgba(245,180,180,0.45)","--blob2":"rgba(220,170,210,0.35)","--navBg":"rgba(253,246,246,0.97)" },
 sage: { "--cream":"#f3fdf6","--blush":"#b8ddb8","--rose":"#88c488","--dusty":"#5a9e5a","--text":"#2d4a2d","--textLight":"#6a8a6a","--white":"#ffffff","--hero":"linear-gradient(135deg,#edf9ed,#e0f5e0)","--blob1":"rgba(168,197,160,0.4)","--blob2":"rgba(144,196,144,0.3)","--navBg":"rgba(243,253,246,0.97)" },
 lavender: { "--cream":"#f8f3fd","--blush":"#d8c8f0","--rose":"#c0a8e8","--dusty":"#9b78d4","--text":"#3a2d4a","--textLight":"#7a6a8a","--white":"#ffffff","--hero":"linear-gradient(135deg,#f0eafd,#e8e0f8)","--blob1":"rgba(197,184,232,0.4)","--blob2":"rgba(180,160,220,0.3)","--navBg":"rgba(248,243,253,0.97)" },
 midnight: { "--cream":"#1a1a2e","--blush":"#3a3a5c","--rose":"#6a6aaa","--dusty":"#9a9ae0","--text":"#e8e8f8","--textLight":"#a8a8c8","--white":"#252540","--hero":"linear-gradient(135deg,#252545,#1e1e3a)","--blob1":"rgba(106,106,170,0.2)","--blob2":"rgba(154,154,224,0.15)","--navBg":"rgba(26,26,46,0.98)" },
@@ -427,10 +427,12 @@ const navItems = [
 ];
 
 return (
-<div style={{ background:cs.cream,minHeight:"100vh",maxWidth:420,margin:"0 auto",position:"relative",paddingBottom:90,color:cs.text,transition:"background 0.4s" }}>
+<div style={{ background:cs.cream,minHeight:"100vh",maxWidth:420,margin:"0 auto",position:"relative",paddingBottom:90,color:cs.text,transition:"background 0.4s",boxShadow:"none" }}>
 <style>{`
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Quicksand',sans-serif;}
+html,body,#root{background:transparent !important;min-height:100vh;}
+body{background:transparent !important;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes flowerSpin{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.06)}}
 @keyframes popIn{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}
