@@ -184,6 +184,26 @@ const save = useCallback((s) => {
 try { localStorage.setItem("bloom-state", JSON.stringify(s)); } catch {}
 }, []);
 
+// Register service worker for background notifications
+useEffect(() => {
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('/sw.js').then(reg => {
+console.log('Bloom SW registered');
+}).catch(err => console.log('SW error:', err));
+}
+}, []);
+
+// Send schedule to service worker whenever it changes
+useEffect(() => {
+if (!appState.settings.reminderOn) return;
+if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+navigator.serviceWorker.controller.postMessage({
+type: 'SCHEDULE_REMINDER',
+schedule: appState.settings.schedule
+});
+}
+}, [appState.settings.schedule, appState.settings.reminderOn]);
+
 const updateState = useCallback((updater) => {
 setAppState(prev => {
 const next = typeof updater === "function" ? updater(prev) : {...prev, ...updater};
@@ -844,4 +864,3 @@ return (
 </div>
 );
 }
-
